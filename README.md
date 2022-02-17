@@ -29,3 +29,13 @@ iex -S mix
 ```
 mix run --no-halt
 ```
+
+### Executando testes de unidade
+```
+mix test
+```
+
+### Executando testes de unidade continuamente
+```
+mix test.watch
+```
