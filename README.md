@@ -1,21 +1,31 @@
-# Showcase
+# Hexagonal Architecture Showcase
 
-**TODO: Add description**
+Projeto demonstrando experiências recentes com uso de arquitetura hexagonal em uma stack Elixir + PostgreSQL.
 
-## Installation
+## Setup de ambiente local
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `showcase` to your list of dependencies in `mix.exs`:
+### Requisitos
 
-```elixir
-def deps do
-  [
-    {:showcase, "~> 0.1.0"}
-  ]
-end
+  * Elixir 1.13+, Erlang 22+
+  * Docker, Docker Compose
+
+https://hexdocs.pm/phoenix/installation.html  
+https://hexdocs.pm/phoenix/installation.html#elixir-1-12-or-later  
+https://hexdocs.pm/phoenix/installation.html#phoenix  
+https://docs.docker.com/get-docker/  
+https://docs.docker.com/compose/install/
+
+### Instalando dependências
+```
+mix deps.get
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/showcase>.
+### Rodando em modo interativo
+```
+iex -S mix
+```
 
+### Rodando em modo não interativo
+```
+mix run --no-halt
+```
