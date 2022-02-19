@@ -2,6 +2,16 @@
 
 Projeto demonstrando experiências recentes com uso de arquitetura hexagonal em uma stack Elixir + PostgreSQL.
 
+## Arquitetura
+
+[Encontre aqui](docs/adr) informações sobre decisões de arquitetura relacionadas a esta aplicação.
+
+### Registrando novas decisões de arquitetura
+
+1. [Instale](https://github.com/npryce/adr-tools/blob/master/INSTALL.md) a ferramenta `adr-tools`.  
+2. Utilize o comando `adr help new` para aprender mais sobre como utilizar o comando `adr new`
+3. Crie a nova ADR com o comando `adr new` e edite o arquivo de maneira que documente a decisão de arquitetura em questão.
+
 ## Setup de ambiente local
 
 ### Requisitos
