@@ -15,6 +15,11 @@ https://hexdocs.pm/phoenix/installation.html#phoenix
 https://docs.docker.com/get-docker/  
 https://docs.docker.com/compose/install/
 
+### Subindo ambiente Docker
+```
+docker-compose up
+```
+
 ### Instalando dependências
 ```
 mix deps.get
