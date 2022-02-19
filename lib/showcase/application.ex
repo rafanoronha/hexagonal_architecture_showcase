@@ -5,11 +5,12 @@ defmodule Showcase.Application do
 
   use Application
 
+  alias Showcase.SecondaryAdapters.DatabaseRepo
+
   @impl true
   def start(_type, _args) do
     children = [
-      # Starts a worker by calling: Showcase.Worker.start_link(arg)
-      # {Showcase.Worker, arg}
+      DatabaseRepo,
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
