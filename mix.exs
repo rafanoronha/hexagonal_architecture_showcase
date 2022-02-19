@@ -6,6 +6,7 @@ defmodule Showcase.MixProject do
       app: :showcase,
       version: "0.1.0",
       elixir: "~> 1.13",
+      elixirc_paths: elixirc_paths(Mix.env),
       start_permanent: Mix.env() == :prod,
       aliases: aliases(),
       deps: deps()
@@ -28,6 +29,10 @@ defmodule Showcase.MixProject do
       {:mix_test_watch, "~> 1.1", only: :dev, runtime: false},
     ]
   end
+
+  # Specifies which paths to compile per environment.
+  defp elixirc_paths(:test), do: ["lib", "test/support"]
+  defp elixirc_paths(_),     do: ["lib"]
 
   # Aliases are shortcuts or tasks specific to the current project.
   # For example, to install project dependencies and perform other setup tasks, run:
