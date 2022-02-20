@@ -24,6 +24,9 @@ defmodule Showcase.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
+      {:plug, "~> 1.13"},
+      {:cowboy, "~> 2.9"},
+      {:plug_cowboy, "~> 2.5"},
       {:ecto_sql, "~> 3.0"},
       {:postgrex, ">= 0.0.0"},
       {:mix_test_watch, "~> 1.1", only: :dev, runtime: false},

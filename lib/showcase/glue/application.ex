@@ -5,11 +5,15 @@ defmodule Showcase.Glue.Application do
 
   use Application
 
-  alias Showcase.SecondaryAdapters.DatabaseRepo
+  alias Showcase.{
+    PrimaryAdapters.HttpEndpoint,
+    SecondaryAdapters.DatabaseRepo,
+  }
 
   @impl true
   def start(_type, _args) do
     children = [
+      HttpEndpoint,
       DatabaseRepo,
     ]
 
