@@ -27,8 +27,10 @@ defmodule Showcase.MixProject do
       {:plug, "~> 1.13"},
       {:cowboy, "~> 2.9"},
       {:plug_cowboy, "~> 2.5"},
+      {:poison, "~> 5.0"},
+      {:jason, "~> 1.3"},
       {:ecto_sql, "~> 3.0"},
-      {:postgrex, ">= 0.0.0"},
+      {:postgrex, "~> 0.15"},
       {:mix_test_watch, "~> 1.1", only: :dev, runtime: false},
     ]
   end

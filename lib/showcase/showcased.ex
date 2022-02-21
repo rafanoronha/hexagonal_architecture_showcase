@@ -3,6 +3,7 @@ defmodule Showcase.Showcased do
   import Ecto.Changeset
 
   schema "showcased" do
+    timestamps()
     field :name, :string
     field :description, :string
     field :context, :map
